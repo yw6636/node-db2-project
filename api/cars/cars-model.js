@@ -7,7 +7,7 @@ const getAll = () => {
 
 const getById = (id) => {
   // DO YOUR MAGIC  
-  return db('cars').where('car_id', id).first()
+  return db('cars').where('id', id).first()
 }
 
 const getByVin = (vin) => {
