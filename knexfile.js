@@ -8,7 +8,7 @@ const sharedConfig = {
   seeds: {
     directory: './data/seeds',
   },
-  pool: {
+  pool: {                    //this is unique to sqlite. This is for situations where we have multiple tables
     afterCreate: (conn, done) => {
       conn.run('PRAGMA foreign_keys = ON', done)
     },
